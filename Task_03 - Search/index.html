@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.css"
+      integrity="sha512-KXol4x3sVoO+8ZsWPFI/r5KBVB/ssCGB5tsv2nVOKwLg33wTFP3fmnXa47FdSVIshVTgsYk/1734xSk9aFIa4A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body id="by">
+    <div class="ui three item menu">
+      <a class="item">Webtoon</a>
+      <a class="item">For</a>
+      <a class="item">Web-tech</a>
+    </div>
+    <div
+      class="ui category search"
+      style="
+        width: 100%;
+        padding: 5px;
+        background-color: rgba(220, 220, 220, 0.804);
+        display: flex;
+        justify-content: center;
+      "
+    >
+      <div class="ui icon input" style="width: 70%">
+        <input
+          class="prompt"
+          type="text"
+          placeholder="Search products..."
+          onkeyup="filterResult()"
+          id="searchTerm"
+        />
+        <i class="search icon"></i>
+      </div>
+    </div>
+    <div class="results" id="resultSection" style="margin: 30px auto; width: 70%">
+      <div>
+        <h2 class="ui center aligned icon header">
+          <i class="circular search icon"></i>
+          Search Result
+        </h2>
+        <div class="item">
+          <div class="content" id="contentSection"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

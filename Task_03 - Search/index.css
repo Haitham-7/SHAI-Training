@@ -1,0 +1,16 @@
+body {
+  background-color: antiquewhite;
+}
+a.header {
+  display: block;
+  background-color: rgb(220, 220, 220);
+  padding: 10px;
+  margin: 13px;
+  color: #000000;
+  cursor: pointer;
+  transition: all 1s;
+}
+
+a.header:hover {
+  transform: scale(1.07);
+}
